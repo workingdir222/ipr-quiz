@@ -1,0 +1,311 @@
+<div class="container d-flex h-100">
+  <div class="d-flex w-100 justify-content-center align-self-center">
+    <mat-horizontal-stepper linear #stepper>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 1</h1>
+            <h3 class="card-text">Jakarta adalah ibukota dari negara</h3>
+            <div class="d-grid gap-2">
+    
+              <button (click)="question1('a', 'Afghanistan', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">A</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Afghanistan
+              </button>
+    
+              <button (click)="question1('b', 'Bangladesh', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">B</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Bangladesh
+              </button>
+    
+              <button (click)="question1('c', 'Indonesia', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">C</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Indonesia
+              </button>
+    
+              <button (click)="question1('d', 'Ukraine', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Ukraine
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 2</h1>
+            <img class="mb-2" src="https://restcountries.eu/data/pse.svg" alt="" style="width: 10rem;">
+            <h3 class="card-text">Adalah bendera dari negara</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question2('a', 'idn', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Indonesia
+              </button>
+    
+              <button (click)="question2('b', 'pse', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Palestine
+              </button>
+    
+              <button (click)="question2('c', 'bgd', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Bangladesh
+              </button>
+    
+              <button (click)="question2('d', 'vnm', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Viet Nam
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 3</h1>
+            <h3 class="card-text">COL adalah kode untuk negera</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question3('a', 'com', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Comoros
+              </button>
+    
+              <button (click)="question3('b', 'cog', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Congo
+              </button>
+    
+              <button (click)="question3('c', 'cri', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Costa Rica
+              </button>
+    
+              <button (click)="question3('d', 'col', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Colombia
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 4</h1>
+            <h3 class="card-text">IQD Adalah kode matauang dari negara</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question4('a', 'iqd', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Iraq
+              </button>
+    
+              <button (click)="question4('b', 'idr', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Indonesia
+              </button>
+    
+              <button (click)="question4('c', 'eur', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Ireland
+              </button>
+    
+              <button (click)="question4('d', 'ils', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Israel
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 5</h1>
+            <h3 class="card-text">Spanish adalah bahasa dari negara berukut, kecuali</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question5('a', 'chile', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Chile
+              </button>
+    
+              <button (click)="question5('b', 'argentina', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Argentina
+              </button>
+    
+              <button (click)="question5('c', 'bangladesh', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Bangladesh
+              </button>
+    
+              <button (click)="question5('d', 'uruguay', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Uruguay
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 6</h1>
+            <h3 class="card-text">221 Adalah kode telepon dari negara</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question6('a', 'senegal', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Senegal
+              </button>
+    
+              <button (click)="question6('b', 'ireland', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Ireland
+              </button>
+    
+              <button (click)="question6('c', 'israel', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Israel
+              </button>
+    
+              <button (click)="question6('d', 'argentina', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Argentina
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 7</h1>
+            <h3 class="card-text">Kode mata uang untuk negara pakistan adalah</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question7('a', 'PEN', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>PEN
+              </button>
+    
+              <button (click)="question7('b', 'PKR', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>PKR
+              </button>
+    
+              <button (click)="question7('c', 'PHP', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>PHP
+              </button>
+    
+              <button (click)="question7('d', 'PLN', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>PLN
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 8</h1>
+            <h3 class="card-text">Ibu kota dara Qatar adalah</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question8('a', 'Doha', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Doha
+              </button>
+    
+              <button (click)="question8('b', 'Warsaw', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Warsaw
+              </button>
+    
+              <button (click)="question8('c', 'Adamstown', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Adamstown
+              </button>
+    
+              <button (click)="question8('d', 'Manila', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Manila
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 9</h1>
+            <h3 class="card-text">Turkey terletak di wilayah</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question9('a', 'Asia', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>Asia
+              </button>
+    
+              <button (click)="question9('b', 'Africa', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Africa
+              </button>
+    
+              <button (click)="question9('c', 'Europe', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Europe
+              </button>
+    
+              <button (click)="question9('d', 'Americas', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Americas
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz 10</h1>
+            <h3 class="card-text">Berikut adalah bahasa yang di gunakan di Singapore, kecuali</h3>
+            <div class="d-grid gap-2">
+
+              <button (click)="question10('a', 'English', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.a == 'true', 'btn-danger': opt.a == 'false', 'btn-outline-success': opt.a == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.a == ''">C</span><span *ngIf="opt.a == 'true'" class="material-icons">check</span><span *ngIf="opt.a == 'false'" class="material-icons">close</span></span>English
+              </button>
+    
+              <button (click)="question10('b', 'Malay', stepper)" type="button" class="btn btn-labeled text-start rounded-pill"  [ngClass]="{'btn-success': opt.b == 'true', 'btn-danger': opt.b == 'false', 'btn-outline-success': opt.b == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.b == ''">A</span><span *ngIf="opt.b == 'true'" class="material-icons">check</span><span *ngIf="opt.b == 'false'" class="material-icons">close</span></span>Malay
+              </button>
+    
+              <button (click)="question10('c', 'Tamil', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.c == 'true', 'btn-danger': opt.c == 'false', 'btn-outline-success': opt.c == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.c == ''">B</span><span *ngIf="opt.c == 'true'" class="material-icons">check</span><span *ngIf="opt.c == 'false'" class="material-icons">close</span></span>Tamil
+              </button>
+    
+              <button (click)="question10('d', 'Dutch', stepper)" type="button" class="btn btn-labeled text-start rounded-pill" [ngClass]="{'btn-success': opt.d == 'true', 'btn-danger': opt.d == 'false', 'btn-outline-success': opt.d == ''}">
+                <span class="btn-label align-middle"><span *ngIf="opt.d == ''">D</span><span *ngIf="opt.d == 'true'" class="material-icons">check</span><span *ngIf="opt.d == 'false'" class="material-icons">close</span></span>Dutch
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card shadow bg-body mt-box" style="width: 20rem;">
+          <img class="mt-map-icon" src="../assets/images/pointer.png" alt="">
+          <div class="card-body text-center">
+            <h1 class="card-title text-uppercase fw-bold title-card-quiz">country quiz</h1>
+            <h3 class="card-text">Selamat anda telah menyelesaikan quiz dengan baik</h3>
+
+            <h1 class="text-uppercase fw-bold">score</h1>
+            <br><br>
+            <span class="alert alert-warning rounded-circle fs-1 mt-3">{{score * 10}}</span>
+
+            <div class="d-grid gap-2 mt-5">
+    
+              <button (click)="stepper.reset()" type="button" class="btn btn-labeled btn-outline-success text-start rounded-pill">
+                <span class="btn-label align-middle"><span class="material-icons">
+                  refresh
+                  </span></span>Reset
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+    
+  </div>
+</div>

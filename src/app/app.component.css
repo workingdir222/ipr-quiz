@@ -1,0 +1,46 @@
+.mat-stepper-horizontal {
+    margin-top: 8px;
+}
+
+.mat-form-field {
+    margin-top: 16px;
+}
+
+.mt-map-icon {
+    margin-top: -100px;
+}
+
+.mt-box {
+    margin-top: 5rem !important;
+}
+
+.btn-label {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50rem;
+}
+ 
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+ 
+.btn {
+    margin-bottom: 10px;
+}
+
+.title-card-quiz {
+    margin-top: -50px;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+}
+.card-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
