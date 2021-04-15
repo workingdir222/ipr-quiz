@@ -678,4 +678,28 @@ export class AppComponent implements OnInit {
       }).length
     })
   }
+
+  restartQuiz(stepper: MatStepper) {
+    this.getData = []
+    this.opt = {
+      "a": "",
+      "b": "",
+      "c": "",
+      "d": "",
+    }
+    this.scoreArr = [
+      {question: ""},
+      {question: ""},
+      {question: ""},
+      {question: ""},
+      {question: ""},
+      {question: ""},
+      {question: ""},
+      {question: ""},
+      {question: ""},
+      {question: ""}
+    ]
+    this.score = 0
+    stepper.reset()
+  }
 }
